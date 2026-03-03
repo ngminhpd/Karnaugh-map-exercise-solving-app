@@ -1,0 +1,50 @@
+﻿<Application x:Class="bt_tet.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:bt_tet"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Global app palette and styles (match MainWindow PanelGradient) -->
+        <SolidColorBrush x:Key="AppBackgroundBrush" Color="#F3F2FF"/>
+
+        <LinearGradientBrush x:Key="PanelGradient" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#A2A1F0" Offset="0"/>
+            <GradientStop Color="#5F5FAD" Offset="1"/>
+        </LinearGradientBrush>
+
+        <!-- Text brushes -->
+        <SolidColorBrush x:Key="GlobalTextBrush" Color="#0B2944"/>
+        <SolidColorBrush x:Key="PanelTextBrush" Color="#FFFFFF"/>
+
+        <!-- Default TextBlock and TextBox styles for readability -->
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource GlobalTextBrush}"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="{StaticResource GlobalTextBrush}"/>
+            <Setter Property="Background" Value="#FFFFFF"/>
+        </Style>
+
+        <!-- Global TabControl style -->
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="{StaticResource AppBackgroundBrush}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+
+        <!-- Simple TabItem styling to better match the purple theme -->
+        <Style TargetType="TabItem">
+            <Setter Property="Padding" Value="12,6"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#2D2A4A"/>
+        </Style>
+
+        <!-- Apply app background to all windows by default -->
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="{StaticResource AppBackgroundBrush}"/>
+        </Style>
+
+    </Application.Resources>
+</Application>

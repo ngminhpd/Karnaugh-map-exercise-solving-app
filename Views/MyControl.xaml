@@ -1,0 +1,4 @@
+
+<Border Background="{StaticResource PanelGradient}" />
+
+<Border Background="{DynamicResource PanelGradient}" />

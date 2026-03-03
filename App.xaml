@@ -1,0 +1,12 @@
+<Application x:Class="bt_tet.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <LinearGradientBrush x:Key="PanelGradient" StartPoint="0,0" EndPoint="0,1">
+      <GradientStop Color="#FFFFFFFF" Offset="0" />
+      <GradientStop Color="#FFEEEEEE" Offset="1" />
+    </LinearGradientBrush>
+    
+  </Application.Resources>
+</Application>
